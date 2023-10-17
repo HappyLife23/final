@@ -109,7 +109,7 @@ a {
 
 .contact-page {
   display: flex;
-
+  padding: 1rem;
   margin: 50px auto;
 }
 
@@ -197,9 +197,52 @@ footer {
 }
 
 /*-------------Mediaqueri---------------------*/
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  label {
+    font-size: 1.2rem;
+  }
+  input {
+    font-size: 1.2rem;
+  }
+  .navbar {
+    height: 150px;
+  }
+  .navbar .nav-logo {
+    display: none;
+  }
+  .navbar .colo-btn {
+    font-size: 1.3rem;
+  }
+  .nav-home {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.7rem;
+  }
+  .nav-home a {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    padding-top: 25%;
+  }
+  .footer-menu {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 900px) {
   body {
     height: 100vh;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  label {
+    font-size: 1.5rem;
+  }
+  input {
+    font-size: 1.2rem;
   }
   .navbar {
     display: flex;
@@ -209,10 +252,12 @@ footer {
     position: absolute;
     right: 0;
     top: 10px;
+    font-size: 1.7rem;
   }
 
   .nav-home {
     padding-bottom: 20px;
+    font-size: 1.7rem;
   }
   img {
     width: 100%;
@@ -263,8 +308,11 @@ footer {
   .user-contact {
     width: 100%;
   }
-  .visby-map {
+  .main-info {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

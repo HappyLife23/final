@@ -41,9 +41,8 @@ a {
   font-size: 2rem;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 25px;
   color: white;
-  justify-content: center;
 }
 
 .colo-btn {
@@ -76,7 +75,7 @@ a {
 .nav-home a:hover {
   color: #f4e87c;
   transition: 0.5s;
-  font-size: larger;
+  transform: scale(1.2);
   border-bottom: 1px solid;
 }
 
@@ -130,7 +129,7 @@ a {
 
 h2 {
   padding: 2rem;
-  font-size: 4rem;
+  font-size: 3rem;
 
   display: flex;
   margin: 2rem;
@@ -178,6 +177,37 @@ footer {
 }
 
 /*-------------Mediaqueri---------------------*/
+@media (max-width: 500px) {
+  h2 {
+    font-size: 2rem;
+  }
+  .main-hero-div p {
+    font-size: 1rem;
+  }
+  .navbar {
+    height: 150px;
+  }
+  .navbar .nav-logo {
+    display: none;
+  }
+  .navbar .colo-btn {
+    font-size: 1.3rem;
+  }
+  .nav-home {
+    display: flex;
+    align-items: center;
+    left: 0;
+    font-size: 1.7rem;
+  }
+  .nav-home a {
+    font-size: 1.3rem;
+    padding: 1rem;
+    padding-top: 25%;
+  }
+  .footer-menu {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 900px) {
   body {
     height: 100vh;
@@ -191,14 +221,23 @@ footer {
     position: absolute;
     right: 0;
     top: 10px;
+    font-size: 1.7rem;
   }
 
   .nav-home {
     padding-bottom: 20px;
+    justify-content: center;
+    font-size: 1.7rem;
   }
   .main-hero {
     display: flex;
     flex-direction: column;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .main-hero-div p {
+    font-size: 1.2rem;
   }
 }
 

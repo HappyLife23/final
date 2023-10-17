@@ -314,6 +314,51 @@ footer {
 }
 
 /*-------------Mediaqueri---------------------*/
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+  .content p {
+    font-size: 1.2rem;
+  }
+  .navbar {
+    height: 150px;
+  }
+  .navbar .nav-logo {
+    display: none;
+  }
+  .navbar .colo-btn {
+    font-size: 1.3rem;
+  }
+  .nav-home {
+    display: flex;
+    align-items: center;
+    left: 0;
+  }
+  .nav-home a {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    padding-top: 25%;
+  }
+
+  .main-section-two {
+    display: flex;
+  }
+
+  .div-firsttwo-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .div-secondtwo-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-menu {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 900px) {
   body {
     height: 100vh;
@@ -327,10 +372,12 @@ footer {
     position: absolute;
     right: 0;
     top: 10px;
+    font-size: 1.7rem;
   }
 
   .nav-home {
     padding-bottom: 20px;
+    font-size: 1.7rem;
   }
   img {
     width: 70%;
